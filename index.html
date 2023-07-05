@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>AVALIE A SUA MENTORIA</h1>
+        <h2>Chegou a hora de avaliar o seu mentor. Bora lá?</h2>
+        <img src="./images/shadow.svg">
+        <h3>INFORMAÇÕES PESSOAIS</h3>
+    </header>
+    <div id="general">
+        <form>
+            <fieldset>
+                <div id="micro-block01">
+                    <div class="group-one">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="group-one">
+                        <label for="surname">Sobrenome</label>
+                        <input type="text" id="surname">
+                    </div>
+                </div>
+                <div class="group-two">
+                    <label for="email">Email <span>(digite um email válido)</span> </label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="micro-block02">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                        <div class="group-three">
+                            <label for="mentor">Selecione quem foi o seu mentor</label>
+                            <select id="mentor">
+                                <option value="mentorone">Mayk Brito</option>
+                                <option value="mentortwo">Rodrigo Gonçalves</option>
+                                <option value="mentorthree">Lara Azevedo</option>
+                            </select>
+                        </div>
+                    <div class="group-four">
+                        <label for="feedback">Feedback sobre o mentor</label>
+                        <textarea name="feedback"></textarea>
+                    </div>
+                    <div id="confirm">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>  
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="micro-block03">
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+                    <div id="col">
+                        <div class="group-five">
+                            <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date">
+                        </div>
+                        <div class="group-five">
+                            <label for="time">Das</label>
+                            <input type="time" id="time">
+                        </div>
+                        <div class="group-five">
+                            <label for="time">Até</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="button">SALVAR</button>
+        </form>
+    </div>
+</body>
+</html>
